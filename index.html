@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AutoLike Detailing — детейлинг, полировка и химчистка авто в Кишинёве</title>
-<meta name="description" content="AutoLike Detailing — детейлинг, полировка, керамика, PPF и химчистка авто в Кишинёве (Ботаника), Drumul Băcioiului 303/a. 5.0★ на Google Картах. Расчёт в WhatsApp за 2 минуты.">
+<meta name="description" content="AutoLike Detailing — детейлинг, полировка, керамика, PPF и химчистка авто в Кишинёве (Ботаника), Drumul Băcioiului 303/a. 5.0★ на Google Картах. Расчёт в Instagram Direct или по телефону.">
 <meta property="og:title" content="AutoLike Detailing — Chișinău, Botanica">
 <meta property="og:description" content="Детейлинг, полировка, керамика, PPF и химчистка. 5.0★ на Google Картах.">
 <meta property="og:image" content="img/al-hex-car.jpg">
@@ -224,7 +224,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   font-size:14px;font-weight:500;line-height:1.35;transition:background .2s var(--ease-mech),color .2s;
 }
 .svc-cta .wa{display:flex;align-items:center;gap:12px}
-.svc-cta .wa svg{width:22px;height:22px;flex:none;color:#25D366;transition:color .2s}
+.svc-cta .wa svg{width:22px;height:22px;flex:none;color:#E1306C;transition:color .2s}
 .svc-cta .go{font-family:var(--f-mono);font-size:12px;font-weight:700;letter-spacing:.1em;white-space:nowrap;color:var(--accent-redline)}
 .svc-cta:hover{background:var(--accent-redline);color:#fff}
 .svc-cta:hover .wa svg,.svc-cta:hover .go{color:#fff}
@@ -396,6 +396,13 @@ fieldset{border:0;min-width:0}
 .rev-card .m{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--text-alloy);text-transform:uppercase;margin-top:auto}
 .rev-card .m b{color:var(--accent-amber);font-weight:700;margin-right:8px}
 
+/* ---------- toast ---------- */
+.toast{position:fixed;left:50%;bottom:24px;z-index:80;transform:translate(-50%,140%);max-width:min(440px,calc(100% - 32px));
+  background:var(--text-titanium);color:var(--bg-carbon);padding:14px 18px;font-size:14px;font-weight:500;line-height:1.35;
+  clip-path:var(--chamfer);transition:transform .3s var(--ease-mech)}
+.toast.on{transform:translate(-50%,0)}
+@media (max-width:680px){.toast{bottom:76px}}
+
 /* ---------- footer ---------- */
 .foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:22px var(--gutter);font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--text-alloy);text-transform:uppercase}
 
@@ -489,6 +496,8 @@ fieldset{border:0;min-width:0}
 <div class="grain" aria-hidden="true"></div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-ig" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M7 2.5h10A4.5 4.5 0 0 1 21.5 7v10a4.5 4.5 0 0 1-4.5 4.5H7A4.5 4.5 0 0 1 2.5 17V7A4.5 4.5 0 0 1 7 2.5Z"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="i-sms" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="miter" d="M3 4h18v13H9l-5 4v-4H3z"/><path stroke="currentColor" stroke-width="2" d="M7 9h10M7 13h6"/></symbol>
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm5.82 14.14c-.25.69-1.44 1.32-1.98 1.37-.51.05-.99.24-3.33-.69-2.82-1.11-4.6-4-4.74-4.18-.14-.19-1.13-1.5-1.13-2.87 0-1.36.71-2.03.97-2.31.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.48.23.55.78 1.91.85 2.05.07.14.12.3.02.48-.09.19-.14.3-.28.46-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.17-.19.7-.81.88-1.09.19-.28.37-.23.62-.14.26.09 1.62.76 1.9.9.28.14.46.21.53.32.07.12.07.67-.18 1.36Z"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
   <symbol id="i-viber" viewBox="0 0 24 24"><path fill="currentColor" d="M11.4 2c-2 0-6.3.4-8 2.7C2 6.4 1.9 9 1.8 11.4c0 2.4-.1 6.9 4 8.1v1.9s0 .8.5.9c.6.2 1-.4 1.6-1l1.2-1.4c3.2.3 5.7-.3 6-.4.6-.2 4.3-.7 4.9-5.6.6-5-.3-8.2-2-9.6C17 3.4 15 2 11.4 2Zm.3 1.6c3.1 0 4.6 1.1 5.4 1.8 1.4 1.2 2.1 3.9 1.6 8-.5 4-3.4 4.2-3.9 4.4-.2.1-2.3.6-5 .4l-2.7 3v-3.3c-3.4-1-3.2-4.6-3.2-6.6.1-2 .2-4.1 1.3-5.5C6.6 4.1 9.9 3.6 11.7 3.6Zm.1 2.5a.4.4 0 0 0 0 .8c1.4 0 2.5.5 3.4 1.4.9.9 1.3 2.1 1.3 3.7a.4.4 0 0 0 .8 0c0-1.8-.5-3.2-1.6-4.3-1-1-2.4-1.6-3.9-1.6Zm-3.4.7c-.3 0-.5.1-.8.3-.3.3-.9.9-.9 1.6 0 .9.5 1.8 1.4 3a10 10 0 0 0 4.3 3.5c.9.4 1.7.6 2.3.2.5-.3.8-.7 1-1.1.1-.3 0-.6-.2-.8l-1.6-1.2c-.3-.2-.7-.2-1 .1l-.6.7c-.2.2-.4.2-.6.1-.9-.4-2.3-1.8-2.6-2.7-.1-.2 0-.4.1-.6l.6-.5c.3-.3.4-.7.2-1l-1-1.6c-.2-.2-.4-.4-.6-.4Zm3.6.7a.4.4 0 0 0 0 .8c.7 0 1.2.2 1.6.6.4.4.6 1 .6 1.7a.4.4 0 0 0 .8 0c0-.9-.3-1.7-.8-2.3-.6-.5-1.3-.8-2.2-.8Zm.2 1.4a.4.4 0 0 0 0 .8c.4 0 .6.3.6.7a.4.4 0 0 0 .8 0c0-.8-.6-1.5-1.4-1.5Z"/></symbol>
@@ -540,14 +549,14 @@ fieldset{border:0;min-width:0}
         </h1>
         <p class="hero-lead" data-i18n-html="hero.lead">Профессиональный детейлинг, полировка и химчистка авто в&nbsp;Кишинёве (Ботаника) <strong>с&nbsp;гарантией результата.</strong></p>
         <ul class="benefits">
-          <li><span class="code">B.01</span><span data-i18n="hero.b1">Цена под вашу марку авто — в WhatsApp за 2 минуты</span></li>
+          <li><span class="code">B.01</span><span data-i18n="hero.b1">Цена под вашу марку авто — в Direct за пару минут</span></li>
           <li><span class="code">B.02</span><span data-i18n="hero.b2">5.0★ — 24 отзыва на Google Картах</span></li>
           <li><span class="code">B.03</span><span data-i18n="hero.b3">Полная химчистка и полировка — за 1–2 дня</span></li>
           <li><span class="code">B.04</span><span data-i18n="hero.b4">Бокс с LED-светом: видим каждую царапину</span></li>
         </ul>
         <div class="cta-row">
-          <a class="btn js-wa" data-wa-ctx="hero" href="https://wa.me/37378005001" target="_blank" rel="noopener">
-            <svg aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="cta.wa">Рассчитать стоимость в WhatsApp</span><span class="arr">→</span>
+          <a class="btn js-wa" data-wa-ctx="hero" href="https://ig.me/m/autolike_detailing" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-ig"/></svg><span data-i18n="cta.wa">Рассчитать стоимость в Direct</span><span class="arr">→</span>
           </a>
           <a class="btn btn--ghost js-tel" href="tel:+37378005001">
             <span class="led"></span><span data-i18n="cta.call">Позвонить</span><span class="arr">→</span>
@@ -588,7 +597,7 @@ fieldset{border:0;min-width:0}
       </div>
       <div class="ttl">
         <h2 class="h-sec" id="svc-title" data-i18n="svc.title">Услуги и стартовые цены</h2>
-        <p data-i18n="svc.sub">Точную цену не называем вслепую: она зависит от марки, размера и состояния авто. Пришлите фото в WhatsApp — посчитаем за 2 минуты.</p>
+        <p data-i18n="svc.sub">Точную цену не называем вслепую: она зависит от марки, размера и состояния авто. Пришлите фото в Instagram Direct — посчитаем за пару минут.</p>
       </div>
     </div>
     <div class="svc-grid">
@@ -608,9 +617,9 @@ fieldset{border:0;min-width:0}
           <p data-i18n="svc.1.d">Сиденья, потолок, ковры, багажник. Выводим пятна, запах сигарет и животных, обрабатываем и защищаем кожу.</p>
           <ul class="svc-list"><li data-i18n="svc.1.l1">Ткань и кожа</li><li data-i18n="svc.1.l2">Потолок</li><li data-i18n="svc.1.l3">Озонация</li></ul>
         </div>
-        <a class="svc-cta js-wa" data-wa-ctx="svc1" href="https://wa.me/37378005001" target="_blank" rel="noopener">
-          <span class="wa"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="svc.cta">Узнать точную цену для вашей марки авто в WhatsApp за 2 минуты</span></span>
-          <span class="go">WA →</span>
+        <a class="svc-cta js-wa js-ig-dm" data-wa-ctx="svc1" href="https://ig.me/m/autolike_detailing" target="_blank" rel="noopener">
+          <span class="wa"><svg aria-hidden="true"><use href="#i-ig"/></svg><span data-i18n="svc.cta">Узнать точную цену для вашей марки авто в Instagram Direct</span></span>
+          <span class="go">DM →</span>
         </a>
       </article>
       <!-- 2 -->
@@ -629,9 +638,9 @@ fieldset{border:0;min-width:0}
           <p data-i18n="svc.2.d">Абразивная и восстановительная полировка: убираем паутинку, голограммы и мелкие царапины, возвращаем глубину цвета.</p>
           <ul class="svc-list"><li data-i18n="svc.2.l1">Замер ЛКП</li><li data-i18n="svc.2.l2">Абразив</li><li data-i18n="svc.2.l3">Финиш</li></ul>
         </div>
-        <a class="svc-cta js-wa" data-wa-ctx="svc2" href="https://wa.me/37378005001" target="_blank" rel="noopener">
-          <span class="wa"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="svc.cta">Узнать точную цену для вашей марки авто в WhatsApp за 2 минуты</span></span>
-          <span class="go">WA →</span>
+        <a class="svc-cta js-wa js-ig-dm" data-wa-ctx="svc2" href="https://ig.me/m/autolike_detailing" target="_blank" rel="noopener">
+          <span class="wa"><svg aria-hidden="true"><use href="#i-ig"/></svg><span data-i18n="svc.cta">Узнать точную цену для вашей марки авто в Instagram Direct</span></span>
+          <span class="go">DM →</span>
         </a>
       </article>
       <!-- 3 -->
@@ -650,9 +659,9 @@ fieldset{border:0;min-width:0}
           <p data-i18n="svc.3.d">Убираем желтизну и мутность пластика, возвращаем свет на дорогу. По желанию — защитный слой, чтобы фары не мутнели снова.</p>
           <ul class="svc-list"><li data-i18n="svc.3.l1">Шлифовка</li><li data-i18n="svc.3.l2">Полировка</li><li data-i18n="svc.3.l3">Защита</li></ul>
         </div>
-        <a class="svc-cta js-wa" data-wa-ctx="svc3" href="https://wa.me/37378005001" target="_blank" rel="noopener">
-          <span class="wa"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="svc.cta">Узнать точную цену для вашей марки авто в WhatsApp за 2 минуты</span></span>
-          <span class="go">WA →</span>
+        <a class="svc-cta js-wa js-ig-dm" data-wa-ctx="svc3" href="https://ig.me/m/autolike_detailing" target="_blank" rel="noopener">
+          <span class="wa"><svg aria-hidden="true"><use href="#i-ig"/></svg><span data-i18n="svc.cta">Узнать точную цену для вашей марки авто в Instagram Direct</span></span>
+          <span class="go">DM →</span>
         </a>
       </article>
       <!-- 4 -->
@@ -671,9 +680,9 @@ fieldset{border:0;min-width:0}
           <p data-i18n="svc.4.d">Керамика после полировки — блеск и гидрофоб на месяцы. Плёнка PPF — броня от сколов и песка на капоте, бампере и фарах.</p>
           <ul class="svc-list"><li data-i18n="svc.4.l1">Керамика</li><li data-i18n="svc.4.l2">PPF-плёнка</li><li data-i18n="svc.4.l3">Воск</li></ul>
         </div>
-        <a class="svc-cta js-wa" data-wa-ctx="svc4" href="https://wa.me/37378005001" target="_blank" rel="noopener">
-          <span class="wa"><svg aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="svc.cta">Узнать точную цену для вашей марки авто в WhatsApp за 2 минуты</span></span>
-          <span class="go">WA →</span>
+        <a class="svc-cta js-wa js-ig-dm" data-wa-ctx="svc4" href="https://ig.me/m/autolike_detailing" target="_blank" rel="noopener">
+          <span class="wa"><svg aria-hidden="true"><use href="#i-ig"/></svg><span data-i18n="svc.cta">Узнать точную цену для вашей марки авто в Instagram Direct</span></span>
+          <span class="go">DM →</span>
         </a>
       </article>
     </div>
@@ -813,8 +822,8 @@ fieldset{border:0;min-width:0}
             <legend class="tag"><b>STEP 3/3 // </b>CHANNEL</legend>
             <h3 data-i18n="q.s3">Куда прислать расчёт?</h3>
             <div class="opts" role="radiogroup" data-q="channel">
-              <button type="button" class="opt" role="radio" aria-checked="false" data-v="whatsapp"><svg viewBox="0 0 24 24" style="width:30px;height:30px" aria-hidden="true"><use href="#i-wa"/></svg><span class="on">WhatsApp</span></button>
-              <button type="button" class="opt" role="radio" aria-checked="false" data-v="viber"><svg viewBox="0 0 24 24" style="width:30px;height:30px" aria-hidden="true"><use href="#i-viber"/></svg><span class="on">Viber</span></button>
+              <button type="button" class="opt" role="radio" aria-checked="false" data-v="instagram"><svg viewBox="0 0 24 24" style="width:30px;height:30px" aria-hidden="true"><use href="#i-ig"/></svg><span class="on">Instagram</span></button>
+              <button type="button" class="opt" role="radio" aria-checked="false" data-v="sms"><svg viewBox="0 0 24 24" style="width:30px;height:30px" aria-hidden="true"><use href="#i-sms"/></svg><span class="on">SMS</span></button>
               <button type="button" class="opt" role="radio" aria-checked="false" data-v="call"><svg viewBox="0 0 24 24" style="width:30px;height:30px" aria-hidden="true"><use href="#i-phone"/></svg><span class="on" data-i18n="q.call">Звонок</span></button>
             </div>
             <div class="q-summary" id="qSummary" hidden>
@@ -908,14 +917,14 @@ fieldset{border:0;min-width:0}
       <div class="ct-info">
         <div class="ct-row"><span class="k" data-i18n="ct.addr">Адрес</span><span class="v">Drumul Băcioiului 303/a<br><span style="color:var(--text-alloy)" data-i18n="ct.city">Ботаника, Кишинёв</span></span></div>
         <div class="ct-row"><span class="k" data-i18n="ct.phone">Телефон</span><a class="v phone js-tel js-phone-fmt" href="tel:+37378005001">+373 780 05 001</a></div>
-        <div class="ct-row"><span class="k" data-i18n="ct.hours">График</span><span class="v" data-i18n="ct.hoursV">По записи — уточните удобное время в WhatsApp</span></div>
+        <div class="ct-row"><span class="k" data-i18n="ct.hours">График</span><span class="v" data-i18n="ct.hoursV">По записи — позвоните или напишите в Direct</span></div>
         <div class="ct-row" id="igRow"><span class="k">Instagram</span><span class="v"><a id="igLink" href="#" target="_blank" rel="noopener"></a></span></div>
         <div class="route">
           <a class="js-route-g" href="#" target="_blank" rel="noopener"><span class="s">ROUTE // 01</span><span class="t" data-i18n="ct.rg">Маршрут в Google Maps</span></a>
           <a class="js-route-w" href="#" target="_blank" rel="noopener"><span class="s">ROUTE // 02</span><span class="t" data-i18n="ct.rw">Маршрут в Waze</span></a>
         </div>
         <div class="ct-cta">
-          <a class="btn js-wa" data-wa-ctx="contacts" href="https://wa.me/37378005001" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span><span class="arr">→</span></a>
+          <a class="btn js-wa" data-wa-ctx="contacts" href="https://ig.me/m/autolike_detailing" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-ig"/></svg><span>Instagram Direct</span><span class="arr">→</span></a>
           <a class="btn btn--ghost js-tel" href="tel:+37378005001"><span class="led"></span><span data-i18n="cta.call">Позвонить</span><span class="arr">→</span></a>
         </div>
       </div>
@@ -931,8 +940,9 @@ fieldset{border:0;min-width:0}
   </div>
 </footer>
 
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 <nav class="dock" aria-label="Quick contact">
-  <a class="js-wa" data-wa-ctx="dock" href="https://wa.me/37378005001" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="js-wa" data-wa-ctx="dock" href="https://ig.me/m/autolike_detailing" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-ig"/></svg>Direct</a>
   <a class="js-tel" href="tel:+37378005001"><svg aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cta.callShort">Звонок</span></a>
 </nav>
 
@@ -965,16 +975,16 @@ const I18N = {
     'hero.meta':'Кишинёв · Ботаника · Drumul Băcioiului 303/a',
     'hero.h1a':'Детейлинг','hero.h1b':'полировка','hero.h1c':'химчистка',
     'hero.lead':'Профессиональный детейлинг, полировка и химчистка авто в&nbsp;Кишинёве (Ботаника) <strong>с&nbsp;гарантией результата.</strong>',
-    'hero.b1':'Цена под вашу марку авто — в WhatsApp за 2 минуты',
+    'hero.b1':'Цена под вашу марку авто — в Direct за пару минут',
     'hero.b2':'5.0★ — 24 отзыва на Google Картах',
     'hero.b3':'Полная химчистка и полировка — за 1–2 дня',
     'hero.b4':'Бокс с LED-светом: видим каждую царапину',
-    'cta.wa':'Рассчитать стоимость в WhatsApp','cta.call':'Позвонить','cta.callShort':'Звонок',
+    'cta.wa':'Рассчитать стоимость в Direct','cta.call':'Позвонить','cta.callShort':'Звонок',
     'side.rating':'Google Maps','side.turn':'Срок работ','side.days':'дня','side.revs':'24 отзыва','side.followers':'подписчиков',
     'ticker':['Химчистка салона','Полировка кузова','Керамика','PPF-плёнка','Полировка фар','AutoLike Detailing','Ботаника · Кишинёв','5.0★ Google'],
     'svc.title':'Услуги и стартовые цены',
-    'svc.sub':'Точную цену не называем вслепую: она зависит от марки, размера и состояния авто. Пришлите фото в WhatsApp — посчитаем за 2 минуты.',
-    'svc.cta':'Узнать точную цену для вашей марки авто в WhatsApp за 2 минуты',
+    'svc.sub':'Точную цену не называем вслепую: она зависит от марки, размера и состояния авто. Пришлите фото в Instagram Direct — посчитаем за пару минут.',
+    'svc.cta':'Узнать точную цену для вашей марки авто в Instagram Direct',
     'spec.time':'Время','spec.method':'Метод','spec.result':'Итог',
     'svc.1.t':'Химчистка салона','svc.1.d':'Сиденья, потолок, ковры, багажник. Выводим пятна, запах сигарет и животных, обрабатываем и защищаем кожу.',
     'svc.1.l1':'Ткань и кожа','svc.1.l2':'Потолок','svc.1.l3':'Озонация','svc.1.time':'6–10 ч','svc.1.method':'Экстрактор','svc.1.res':'Без запаха',
@@ -1008,10 +1018,10 @@ const I18N = {
     'q.d1':'Пятна, запах, кожа','q.d2':'Царапины, голограммы','q.d3':'Желтизна, мутность','q.d4':'Блеск и гидрофоб',
     'q.complex':'Комплекс','q.dx':'Салон + кузов, «как новая»','q.call':'Звонок',
     'q.back':'Назад','q.next':'Далее','q.hint':'Выберите вариант',
-    'q.send.whatsapp':'Отправить в WhatsApp','q.send.viber':'Открыть Viber','q.send.call':'Позвонить мастеру',
+    'q.send.instagram':'Скопировать и открыть Direct','q.send.sms':'Отправить SMS','q.send.call':'Позвонить мастеру',
     'q.msg':'Здравствуйте! Хочу узнать стоимость.\nКузов: {body}\nУслуга: {service}\nМарка и модель: ',
-    'q.done.whatsapp':'Открыли WhatsApp с готовым сообщением — допишите марку авто и отправьте. Фото ускорят расчёт.',
-    'q.done.viber':'Открываем Viber. Текст запроса скопирован — вставьте его в чат и допишите марку авто.',
+    'q.done.instagram':'Текст запроса скопирован. В открывшемся Direct вставьте его и допишите марку авто — фото ускорят расчёт.',
+    'q.done.sms':'Открываем SMS с готовым текстом — допишите марку авто и отправьте.',
     'q.done.call':'Набираем мастера. Назовите кузов и услугу — цену скажут сразу.',
     'rev.title':'Живые отзывы','rev.sub':'24 отзыва — все на 5 звёзд. Реальные цитаты клиентов с нашей карточки в Google Картах.',
     'rev.rating':'Рейтинг на Google Картах',
@@ -1020,7 +1030,7 @@ const I18N = {
     'rev.all':'Все отзывы на Google Картах','rev.allS':'Читайте без фильтров — прямо в карточке',
     'rev.leave':'Уже были у нас?','rev.leaveS':'Оставьте отзыв — это лучшая благодарность мастерам',
     'ct.title':'Как нас найти','ct.sub':'Бокс на Ботанике. Заезжайте на осмотр — или пришлите фото, и мы скажем цену заранее.',
-    'ct.addr':'Адрес','ct.city':'Ботаника, Кишинёв','ct.phone':'Телефон','ct.hours':'График','ct.hoursV':'По записи — уточните удобное время в WhatsApp',
+    'ct.addr':'Адрес','ct.city':'Ботаника, Кишинёв','ct.phone':'Телефон','ct.hours':'График','ct.hoursV':'По записи — позвоните или напишите в Direct',
     'ct.rg':'Маршрут в Google Maps','ct.rw':'Маршрут в Waze',
         'wa.hero':'Здравствуйте! Хочу рассчитать стоимость детейлинга. Марка и модель авто: ',
     'wa.svc1':'Здравствуйте! Сколько стоит химчистка салона? Марка и модель авто: ',
@@ -1028,7 +1038,8 @@ const I18N = {
     'wa.svc3':'Здравствуйте! Сколько стоит полировка фар? Марка и модель авто: ',
     'wa.svc4':'Здравствуйте! Сколько стоит керамика / PPF-плёнка? Марка и модель авто: ',
     'wa.contacts':'Здравствуйте! Хочу записаться на осмотр авто.',
-    'wa.dock':'Здравствуйте! Хочу рассчитать стоимость детейлинга. Марка и модель авто: '
+    'wa.dock':'Здравствуйте! Хочу рассчитать стоимость детейлинга. Марка и модель авто: ',
+    'toast.copied':'Текст запроса скопирован — вставьте его в Direct'
   },
   ro:{
     'doc.title':'AutoLike Detailing — detailing, polișare și curățare chimică auto în Chișinău',
@@ -1036,16 +1047,16 @@ const I18N = {
     'hero.meta':'Chișinău · Botanica · Drumul Băcioiului 303/a',
     'hero.h1a':'Detailing','hero.h1b':'polișare','hero.h1c':'curățare',
     'hero.lead':'Detailing auto profesional, polișare și curățare chimică în&nbsp;Chișinău (Botanica) — <strong>mașina ta ca nouă.</strong>',
-    'hero.b1':'Prețul pentru modelul tău — pe WhatsApp în 2 minute',
+    'hero.b1':'Prețul pentru modelul tău — în Direct, în câteva minute',
     'hero.b2':'5.0★ — 24 de recenzii pe Google Maps',
     'hero.b3':'Curățare chimică completă și polișare — 1–2 zile',
     'hero.b4':'Box cu lumină LED: vedem fiecare zgârietură',
-    'cta.wa':'Calculează prețul pe WhatsApp','cta.call':'Sună acum','cta.callShort':'Apel',
+    'cta.wa':'Calculează prețul în Direct','cta.call':'Sună acum','cta.callShort':'Apel',
     'side.rating':'Google Maps','side.turn':'Termen','side.days':'zile','side.revs':'24 recenzii','side.followers':'urmăritori',
     'ticker':['Curățare chimică salon','Polișare caroserie','Ceramică','Folie PPF','Polișare faruri','AutoLike Detailing','Botanica · Chișinău','5.0★ Google'],
     'svc.title':'Servicii și prețuri de start',
-    'svc.sub':'Nu dăm prețuri pe nevăzute: costul depinde de marcă, dimensiune și starea mașinii. Trimite o poză pe WhatsApp — calculăm în 2 minute.',
-    'svc.cta':'Află prețul exact pentru mașina ta pe WhatsApp în 2 minute',
+    'svc.sub':'Nu dăm prețuri pe nevăzute: costul depinde de marcă, dimensiune și starea mașinii. Trimite o poză în Instagram Direct — calculăm în câteva minute.',
+    'svc.cta':'Află prețul exact pentru mașina ta în Instagram Direct',
     'spec.time':'Timp','spec.method':'Metodă','spec.result':'Rezultat',
     'svc.1.t':'Curățare chimică salon','svc.1.d':'Scaune, plafon, mochetă, portbagaj. Scoatem pete, mirosul de țigară și de animale, curățăm și protejăm pielea.',
     'svc.1.l1':'Textil și piele','svc.1.l2':'Plafon','svc.1.l3':'Ozonare','svc.1.time':'6–10 h','svc.1.method':'Extractor','svc.1.res':'Fără miros',
@@ -1079,10 +1090,10 @@ const I18N = {
     'q.d1':'Pete, miros, piele','q.d2':'Zgârieturi, holograme','q.d3':'Îngălbenire, opacitate','q.d4':'Luciu și efect hidrofob',
     'q.complex':'Complex','q.dx':'Salon + caroserie, „ca nouă”','q.call':'Apel',
     'q.back':'Înapoi','q.next':'Mai departe','q.hint':'Alege o variantă',
-    'q.send.whatsapp':'Trimite pe WhatsApp','q.send.viber':'Deschide Viber','q.send.call':'Sună meșterul',
+    'q.send.instagram':'Copiază și deschide Direct','q.send.sms':'Trimite SMS','q.send.call':'Sună meșterul',
     'q.msg':'Bună ziua! Aș vrea să aflu prețul.\nCaroserie: {body}\nServiciu: {service}\nMarca și modelul: ',
-    'q.done.whatsapp':'Am deschis WhatsApp cu mesajul gata — adaugă marca mașinii și trimite. Pozele grăbesc calculul.',
-    'q.done.viber':'Deschidem Viber. Textul cererii e copiat — lipește-l în chat și adaugă marca mașinii.',
+    'q.done.instagram':'Textul cererii e copiat. În Direct lipește-l și adaugă marca mașinii — pozele grăbesc calculul.',
+    'q.done.sms':'Deschidem SMS cu textul gata — adaugă marca mașinii și trimite.',
     'q.done.call':'Sunăm meșterul. Spune caroseria și serviciul — afli prețul imediat.',
     'rev.title':'Recenzii reale','rev.sub':'24 de recenzii — toate de 5 stele. Citate reale ale clienților de pe pagina noastră din Google Maps.',
     'rev.rating':'Rating pe Google Maps',
@@ -1091,7 +1102,7 @@ const I18N = {
     'rev.all':'Toate recenziile pe Google Maps','rev.allS':'Citește-le fără filtre — direct pe pagina noastră',
     'rev.leave':'Ai fost deja la noi?','rev.leaveS':'Lasă o recenzie — cea mai bună mulțumire pentru meșteri',
     'ct.title':'Cum ne găsești','ct.sub':'Box în Botanica. Vino la o evaluare — sau trimite o poză și îți spunem prețul din timp.',
-    'ct.addr':'Adresă','ct.city':'Botanica, Chișinău','ct.phone':'Telefon','ct.hours':'Program','ct.hoursV':'Cu programare — stabilește ora potrivită pe WhatsApp',
+    'ct.addr':'Adresă','ct.city':'Botanica, Chișinău','ct.phone':'Telefon','ct.hours':'Program','ct.hoursV':'Cu programare — sună sau scrie-ne în Direct',
     'ct.rg':'Traseu în Google Maps','ct.rw':'Traseu în Waze',
         'wa.hero':'Bună ziua! Aș vrea să calculez prețul pentru detailing. Marca și modelul: ',
     'wa.svc1':'Bună ziua! Cât costă curățarea chimică a salonului? Marca și modelul: ',
@@ -1099,21 +1110,29 @@ const I18N = {
     'wa.svc3':'Bună ziua! Cât costă polișarea farurilor? Marca și modelul: ',
     'wa.svc4':'Bună ziua! Cât costă ceramica / folia PPF? Marca și modelul: ',
     'wa.contacts':'Bună ziua! Aș vrea să mă programez la o evaluare.',
-    'wa.dock':'Bună ziua! Aș vrea să calculez prețul pentru detailing. Marca și modelul: '
+    'wa.dock':'Bună ziua! Aș vrea să calculez prețul pentru detailing. Marca și modelul: ',
+    'toast.copied':'Textul cererii e copiat — lipește-l în Direct'
   }
 };
 
 const LABELS = {
   body:{sedan:'q.sedan',crossover:'q.crossover',suv:'q.suv'},
   service:{interior:'svc.1.t',polish:'svc.2.t',coating:'q.ceramic',ppf:'q.ppf',lights:'svc.3.t',complex:'q.complex'},
-  channel:{whatsapp:'WhatsApp',viber:'Viber',call:'q.call'}
+  channel:{instagram:'Instagram',sms:'SMS',call:'q.call'}
 };
 
 let lang = 'ru';
 const t = k => (I18N[lang][k] !== undefined ? I18N[lang][k] : (I18N.ru[k] !== undefined ? I18N.ru[k] : k));
 const $ = (s,r=document) => r.querySelector(s);
 const $$ = (s,r=document) => Array.from(r.querySelectorAll(s));
-const waUrl = text => 'https://wa.me/' + CONFIG.phone.replace(/\D/g,'') + (text ? '?text=' + encodeURIComponent(text) : '');
+const dmUrl = () => 'https://ig.me/m/' + CONFIG.instagram.replace(/\/+$/,'').split('/').pop();
+function copyText(text){
+  try{ if (navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(text).catch(() => {}); return; } }catch(e){}
+  const ta = document.createElement('textarea'); ta.value = text; ta.style.cssText = 'position:fixed;opacity:0'; document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); }catch(e){} ta.remove();
+}
+let toastT;
+function toast(msg){ const el = $('#toast'); el.textContent = msg; el.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('on'), 4200); }
 
 function applyLang(next){
   lang = next;
@@ -1123,7 +1142,7 @@ function applyLang(next){
   $$('[data-i18n-html]').forEach(el => { el.innerHTML = t(el.dataset.i18nHtml); });
   $$('[data-i18n-alt]').forEach(el => { el.alt = t(el.dataset.i18nAlt); });
   $$('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
-  $$('.js-wa').forEach(a => { a.href = waUrl(t('wa.' + (a.dataset.waCtx || 'hero'))); });
+  $$('.js-wa').forEach(a => { a.href = dmUrl(); });
   ['services','box','results','quiz','reviews','contacts'].forEach((id,i) => {
     $('#' + id).dataset.label = '0' + (i + 1) + ' — ' + t('nav.' + id);
   });
@@ -1324,8 +1343,11 @@ function focusStep(){
 function send(){
   const msg = quizMessage();
   const done = $('#qDone');
-  if (quiz.channel === 'whatsapp'){
-    window.open(waUrl(msg), '_blank', 'noopener');
+  if (quiz.channel === 'instagram'){
+    copyText(msg);
+    window.open(dmUrl(), '_blank', 'noopener');
+  } else if (quiz.channel === 'sms'){
+    location.href = 'sms:' + CONFIG.phone + '?body=' + encodeURIComponent(msg);
   } else if (quiz.channel === 'viber'){
     if (navigator.clipboard) navigator.clipboard.writeText(msg).catch(() => {});
     location.href = 'viber://chat?number=' + encodeURIComponent(CONFIG.phone) + '&draft=' + encodeURIComponent(msg);
@@ -1347,6 +1369,7 @@ function initReveal(){
   const heroRpm = $('[data-rpm="9"]'); buildRpm(heroRpm, 18);
   buildRpm($('#quizRpm'), 24);
   initLinks(); initSlider(); initQuiz(); initReveal();
+  $$('.js-wa').forEach(a => a.addEventListener('click', () => { copyText(t('wa.' + (a.dataset.waCtx || 'hero'))); toast(t('toast.copied')); }));
   $$('.lang button').forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
   let saved = null;
   try{ saved = localStorage.getItem('dtl-lang'); }catch(e){}
